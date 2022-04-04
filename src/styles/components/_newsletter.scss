@@ -1,0 +1,42 @@
+
+.newsletter {
+
+    &__main-container {
+        width: 90%;
+
+        h4 {
+            margin: 13px 0;
+            text-transform: uppercase;
+            color: #a3a3a3;
+            font-weight: 500;
+            font-size: 13px;
+        }
+    }
+
+    &__form {
+        position: relative;
+    }
+
+    &__input {
+        min-height: 30px;
+        border-radius: 3px;
+        background-color: #fff;
+        border: none;
+        padding: 0 50px 0 20px;
+        color: #a3a3a3;
+        width: 100%;
+        font-size: 12px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 5px;
+        right: 17px;
+        font-size: 17px;
+        color: #a3a3a3;
+    }
+}
