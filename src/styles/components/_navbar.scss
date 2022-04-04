@@ -2,15 +2,46 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid $c-light-gray;
+    // margin-bottom: 3rem;
 
     &__brand {
         display: flex;
         align-items: center;
+
+        i {
+            margin-right: 20px;
+        }
+
+        .navbar__logo {
+            font-size: 26px;
+            color: #000;
+            line-height: 20px;
+        }
+    }
+
+    &__logo {
+        span {
+            color: $c-primary;
+        }
     }
 
     &__ui-items {
         display: flex;
         align-items: center;
+
+        .navbar__ui-icon-container {
+            margin: 0 10px;
+
+            color: #000;
+        }
+    }
+
+    &__ui-icon {
+        font-size: 20px;
+        height: 20px;
+        color: inherit;
     }
 
     &__collapse {
@@ -19,10 +50,68 @@
         height: 100%;
         bottom: 0;
         background-color: #fff;
+        padding: 1.5rem;
+        
+        transition-duration: 0.4s;
+        transition-timing-function: ease;
+        
+        &-menu {
+            left: -100%;
+
+            transition-property: left;
+        }
+
+        &-cart {
+            right: -100%;
+
+            transition-property: right;
+        }
+
+        .navbar__logo {
+            font-size: 28px;
+            color: #000;
+            span {
+                font-size: inherit;
+            }
+        }
+
+        .navbar__logo-container {
+            margin-top: 2rem;
+            text-align: center;
+            border-bottom: 1px solid #000;
+            padding-bottom: 10px;
+        }
     }
 
     &__nav {
         display: flex;
         flex-direction: column;
     }
+
+    &__link {
+        color: #000;
+        font-size: 17px;
+        margin-top: 20px;
+        border-bottom: 1px solid $c-light-gray;
+        padding-bottom: 10px;
+    }
+
+    &__link.active {
+        color: $c-primary;
+    }
+
+    &__close-btn {
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        right: 1.5rem;
+    }
+}
+
+.is-active-left {
+    left: 0px;
+}
+
+.is-active-right {
+    right: 0px;
 }

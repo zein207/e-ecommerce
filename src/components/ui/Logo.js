@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 
 export const Logo = () => {
   return (
-    <Link 
-        className="navbar__logo" 
-        to="/"
-    >
-        april<span>.</span>
-    </Link>
+    <div className='navbar__logo-container'>
+      <Link 
+          className="navbar__logo" 
+          to="/"
+      >
+          april<span>.</span>
+      </Link>
+    </div>
   )
 }

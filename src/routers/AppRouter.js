@@ -7,6 +7,8 @@ import { PLP } from '../components/product/PLP';
 import { Footer } from '../components/ui/Footer';
 import { Navbar } from '../components/ui/Navbar';
 import { BlogScreen } from '../components/pages/BlogScreen';
+import { MyAccountScreen } from '../components/pages/MyAccountScreen';
+import { WishlistScreen } from '../components/pages/WishlistScreen';
 
 export const AppRouter = () => {
   return (
@@ -23,6 +25,8 @@ export const AppRouter = () => {
                 <Route exact path="/" component={ HomeScreen } />
                 <Route exact path="/contact" component={ ContactScreen } />
                 <Route exact path="/blog" component={ BlogScreen } />
+                <Route exact path="/my-account" component={ MyAccountScreen } />
+                <Route exact path="/wishlist" component={ WishlistScreen } />
                 <Route exact path="/category/category-name" component={ PLP } />
                 <Route exact path="/category/category-name/product-name" component={ PDP } />
 

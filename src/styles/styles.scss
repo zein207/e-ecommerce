@@ -1,7 +1,15 @@
 // Base
-@import './base/settings';
 @import './base/base';
+@import './base/settings';
 @import './base/re-mixins';
 
 // Components
 @import './components/navbar';
+@import './components/search';
+
+
+img {
+    width: 100%;
+    height: calc(100vh - 57px);
+    object-fit: cover;
+}
