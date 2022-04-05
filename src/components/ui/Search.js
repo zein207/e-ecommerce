@@ -29,7 +29,7 @@ export const Search = () => {
         />
 
         <button className='navbar__ui-icon-container search__icon search__icon-clean' onClick={ cleanInput }>
-          <i class="fa-solid fa-circle-xmark navbar__ui-icon"></i>
+          <i className="fa-solid fa-circle-xmark navbar__ui-icon"></i>
         </button>
 
       </form>

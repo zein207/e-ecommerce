@@ -20,7 +20,7 @@ export const Navbar = () => {
                 <div className="navbar__nav">
 
                     <button className='navbar__close-btn' onClick={ () => { toggleComponent( 'menu', 'left' ) } }>
-                        <i class="fa-solid fa-xmark fa-3x"></i>
+                        <i className="fa-solid fa-xmark fa-3x"></i>
                     </button>
 
                     <Logo />
@@ -63,7 +63,7 @@ export const Navbar = () => {
                         className="navbar__ui-icon-container navbar__item navbar__link" 
                         onClick={ () => { toggleComponent( 'menu', 'left' ) } }
                     >
-                        <i class="fa-solid fa-user navbar__ui-icon mr-2"></i>
+                        <i className="fa-solid fa-user navbar__ui-icon mr-2"></i>
                         My Account
                     </NavLink>
 
@@ -74,7 +74,7 @@ export const Navbar = () => {
                         className="navbar__ui-icon-container navbar__item navbar__link" 
                         onClick={ () => { toggleComponent( 'menu', 'left' ) } }
                     >
-                        <i class="fa-solid fa-heart navbar__ui-icon mr-2"></i>
+                        <i className="fa-solid fa-heart navbar__ui-icon mr-2"></i>
                         Wishlist
                     </NavLink>
 
@@ -89,7 +89,7 @@ export const Navbar = () => {
                     to="/wishlist"
                     className="navbar__ui-icon-container" 
                 >
-                    <i class="fa-solid fa-heart navbar__ui-icon"></i>
+                    <i className="fa-solid fa-heart navbar__ui-icon"></i>
                 </NavLink>
 
                 <NavLink 
@@ -98,7 +98,7 @@ export const Navbar = () => {
                     to="/my-account"
                     className="navbar__ui-icon-container" 
                 >
-                    <i class="fa-solid fa-user navbar__ui-icon"></i>
+                    <i className="fa-solid fa-user navbar__ui-icon"></i>
                 </NavLink>
 
                 <div className='navbar__ui-icon-container' onClick={ () => { toggleComponent( 'cart', 'right' ) } }>

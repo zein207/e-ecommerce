@@ -16,7 +16,7 @@ export const Newsletter = () => {
                 autoComplete="off"
             />
             <button className='newsletter__icon'>
-                <i class="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-envelope"></i>
             </button>
         </form>
     </div>
