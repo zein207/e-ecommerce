@@ -1,0 +1,33 @@
+
+.slider {
+
+    &__img {
+        width: 100%;
+        height: calc(100vh - 57px);
+        object-fit: cover;
+    }
+
+    &__text-container {
+        position: absolute;
+        top: 6%;
+        width: 100%;
+        text-align: center;
+        display: none;
+
+        &.animate__fadeInDown {
+            display: block;
+        }
+
+        p {
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            line-height: 45px;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+    }
+}

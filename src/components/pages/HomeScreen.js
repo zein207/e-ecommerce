@@ -1,9 +1,10 @@
 import React from 'react';
+import { MainSlider } from '../ui/MainSlider';
 
 export const HomeScreen = () => {
   return (
     <div>
-      <img src='test-1.jpg'></img>
+      <MainSlider />
     </div>
   )
 }

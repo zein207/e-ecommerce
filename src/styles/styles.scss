@@ -4,15 +4,10 @@
 @import './base/re-mixins';
 
 // Components
+@import './components/basic-components';
 @import './components/navbar';
 @import './components/search';
 @import './components/footer';
 @import './components/newsletter';
 @import './components/social';
-
-
-img {
-    width: 100%;
-    height: calc(100vh - 57px);
-    object-fit: cover;
-}
+@import './components/slider';
