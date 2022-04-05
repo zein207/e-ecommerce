@@ -21,4 +21,54 @@
             font-size: 11px;
         }
     }
+
+    &__menu {
+
+        padding-bottom: 8px;
+        border-bottom: 1px solid $c-light-gray;
+        h3 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        li {
+            margin: 7px 0;
+        }
+    }
+
+    &__link {
+        color: #a3a3a3;
+    }
+}
+
+.accordion-trigger {
+    position: relative;
+
+    &::after {
+        content: '+';
+        position: absolute;
+        right: 10px;
+
+        transition-property: transform;
+        transition-duration: 0.4s;
+        transition-timing-function: ease;
+    }
+
+    &--active::after {
+        transform: rotate(45deg);
+    }
+}
+
+.accordion-content {
+    max-height: 0px;
+    overflow: hidden;
+
+    transition-property: max-height;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+
+    &--active {
+        max-height: 600px;
+    }
 }
