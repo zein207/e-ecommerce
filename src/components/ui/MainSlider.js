@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
@@ -15,24 +15,19 @@ export const MainSlider = () => {
     }
 
     const showText = ( slide ) => {
-        // console.log(slide)
         slide.root.querySelector('.is-active').querySelector('.slider__text-container').classList.add('animate__fadeInDown');
     }
 
     const hideText = ( slide ) => {
         const sliders = slide.root.querySelectorAll('.splide__slide');
-        // console.log(sliders)
 
         sliders.forEach( slide => {
-            // console.log(slide)
             if( slide.classList.contains('is-active') ) {
                 return
             }
 
             slide.querySelector('.slider__text-container').classList.remove('animate__fadeInDown');
         });
-        
-        // console.log(slide)
     }
 
     return (
@@ -43,7 +38,6 @@ export const MainSlider = () => {
                 options={ sliderSettings } 
                 onActive={ ( slide ) => { showText( slide ) } }
                 onInactive={ ( slide ) => { hideText( slide ) } }
-                // onActive={ ( slide ) => { console.log(activeSplide.current.splideRef.current) } }
             >
                 <SplideSlide>
                     <img src="images/banner-m-01.jpg" alt="A computer" className='slider__img'/>

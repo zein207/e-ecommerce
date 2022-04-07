@@ -1,0 +1,92 @@
+.double-b{
+
+    &__main-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 50px;
+    }
+
+    &__element {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    &__element-first {
+        .double-b__title {
+            top: 10%;
+            left: 55px;
+            &::after {
+                left: -55px;
+            }
+        }
+    }
+
+    &__element-second {
+        .double-b__title {
+            bottom: 10%;
+            right: 55px;
+            &::after {
+                right: -55px;
+            }
+        }
+    }
+
+    &__title {
+        position: absolute;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        color: #000;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 45px;
+            height: 1px;
+            background-color: #000;
+            top: 50%;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    &__text {
+        position: absolute;
+        background-color: #fff;
+        color: #000;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 20px 30px;
+        z-index: 10;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            bottom: -10px;
+            left: -10px;
+            border: 1px solid #fff;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            letter-spacing: 20px;
+            text-indent: 20px;
+            font-weight: 600;
+        }
+
+        p {
+            letter-spacing: 2px;
+            padding-bottom: 8px;
+        }
+    }
+}
