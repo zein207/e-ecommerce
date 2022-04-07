@@ -2,6 +2,7 @@ import React from 'react';
 import { CategoryBanner } from '../ui/banner/CategoryBanner';
 import { DoubleBanner } from '../ui/banner/DoubleBanner';
 import { SingleBanner } from '../ui/banner/SingleBanner';
+import { BrandSlider } from '../ui/BrandSlider';
 import { MainSlider } from '../ui/MainSlider';
 
 export const HomeScreen = () => {
@@ -48,6 +49,8 @@ export const HomeScreen = () => {
         link1='/category/category-name'
         link2='/category/category-name'
       />
+
+      <BrandSlider />
 
     </div>
   )
