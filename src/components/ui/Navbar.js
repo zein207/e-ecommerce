@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { toggleComponent } from '../../helpers/toggleComponent';
 import { Cart } from './Cart';
 import { Logo } from './Logo';
@@ -23,7 +23,9 @@ export const Navbar = () => {
                         <i className="fa-solid fa-xmark fa-3x"></i>
                     </button>
 
-                    <Logo />
+                    <div onClick={ () => { toggleComponent( 'menu', 'left' ) } }>
+                        <Logo />
+                    </div>
 
                     <Search />
 
