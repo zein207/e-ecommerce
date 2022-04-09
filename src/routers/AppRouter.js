@@ -13,13 +13,13 @@ import { WishlistScreen } from '../components/pages/WishlistScreen';
 export const AppRouter = () => {
   return (
     <Router>
-        <div>
+        <div style={{ position: 'relative' }}>
             <header>
                 <Navbar />
             </header>
         </div>
 
-        <div>
+        <div style={{ marginTop: '56px' }}>
             <Switch>
 
                 <Route exact path="/" component={ HomeScreen } />

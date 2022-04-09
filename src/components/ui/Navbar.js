@@ -11,7 +11,7 @@ export const Navbar = () => {
         <nav className="navbar">
 
             <div className='navbar__brand'>
-                <i className="fa-solid fa-bars-staggered fa-2x" onClick={ () => toggleComponent( 'menu', 'left' ) }></i>
+                <i className="fa-solid fa-bars-staggered fa-2x hidden-lg-up" onClick={ () => toggleComponent( 'menu', 'left' ) }></i>
                 <Logo />
             </div>
                 
@@ -19,11 +19,11 @@ export const Navbar = () => {
             <div className="navbar__collapse navbar__collapse-menu">
                 <div className="navbar__nav">
 
-                    <button className='navbar__close-btn' onClick={ () => { toggleComponent( 'menu', 'left' ) } }>
+                    <button className='navbar__close-btn hidden-lg-up' onClick={ () => { toggleComponent( 'menu', 'left' ) } }>
                         <i className="fa-solid fa-xmark fa-3x"></i>
                     </button>
 
-                    <div onClick={ () => { toggleComponent( 'menu', 'left' ) } }>
+                    <div onClick={ () => { toggleComponent( 'menu', 'left' ) } } className='hidden-lg-up'>
                         <Logo />
                     </div>
 
@@ -62,7 +62,7 @@ export const Navbar = () => {
                         activeClassName="active"
                         exact
                         to="/my-account"
-                        className="navbar__ui-icon-container navbar__item navbar__link" 
+                        className="navbar__ui-icon-container navbar__item navbar__link hidden-lg-up" 
                         onClick={ () => { toggleComponent( 'menu', 'left' ) } }
                     >
                         <i className="fa-solid fa-user navbar__ui-icon mr-2"></i>
@@ -73,7 +73,7 @@ export const Navbar = () => {
                         activeClassName="active"
                         exact
                         to="/wishlist"
-                        className="navbar__ui-icon-container navbar__item navbar__link" 
+                        className="navbar__ui-icon-container navbar__item navbar__link hidden-lg-up" 
                         onClick={ () => { toggleComponent( 'menu', 'left' ) } }
                     >
                         <i className="fa-solid fa-heart navbar__ui-icon mr-2"></i>

@@ -1,0 +1,25 @@
+/*--------------------Hide Elements--------------------*/
+.hide{
+    display: none;
+}
+.hidden{
+    display: none;
+    visibility: hidden;
+}
+@each $breakpoint, $size in $breakpoints {
+    @media screen and (min-width: map-get($size,min)) and (max-width: map-get($size,max)){
+        .hidden-#{$breakpoint} {
+            display: none !important;
+        }
+    }
+    @media screen and (min-width: map-get($size,min)){
+        .hidden-#{$breakpoint}-up{
+            display: none !important;
+        }
+    }
+    @media screen and (max-width: map-get($size,max)){
+        .hidden-#{$breakpoint}-down{
+            display: none !important;
+        }
+    }
+}

@@ -2,6 +2,12 @@
 
     &__main-container {
         position: relative;
+
+        @include mediaFrom(lg) {
+            margin-top: 0px !important;
+            order: 1;
+            margin-left: 50px;
+        }
     }
 
     &__icon {

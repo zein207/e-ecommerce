@@ -1,14 +1,38 @@
+
+header {
+    position: fixed;
+    top: 0px;
+    display: block;
+    width: 100%;
+    z-index: 100;
+
+    @include mediaFrom(lg) {
+        display: flex;
+        justify-content: center;
+        box-shadow: 1px 1px 3px #b5b5b5;
+    }
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     border-bottom: 1px solid $c-light-gray;
-    // margin-bottom: 3rem;
+    background-color: #fff;
+
+    @include mediaFrom(lg) {
+        padding: 1rem 0;
+        width: 90%;
+    }
 
     &__brand {
         display: flex;
         align-items: center;
+
+        @include mediaFrom(lg) {
+            z-index: 1010;
+        }
 
         i {
             margin-right: 20px;
@@ -34,6 +58,10 @@
         display: flex;
         align-items: center;
 
+        @include mediaFrom(lg) {
+            z-index: 1010;
+        }
+
         .navbar__ui-icon-container {
             margin: 0 10px;
 
@@ -45,6 +73,7 @@
         font-size: 20px;
         height: 20px;
         color: inherit;
+        cursor: pointer;
     }
 
     &__collapse {
@@ -63,12 +92,25 @@
             left: -100%;
 
             transition-property: left;
+
+            @include mediaFrom(lg) {
+                left: 0px;
+                height: 57px;
+                bottom: unset;
+                padding: 0 0 0 200px;
+            }
         }
 
         &-cart {
             right: -100%;
 
             transition-property: right;
+
+            @include mediaFrom(lg) {
+                width: 400px;
+                box-shadow: -1px 1px 5px #9d9d9d;
+                padding: 0.8rem 1.5rem;
+            }
         }
 
         .navbar__logo {
@@ -91,6 +133,12 @@
     &__nav {
         display: flex;
         flex-direction: column;
+
+        @include mediaFrom(lg) {
+            flex-direction: row;
+            align-items: center;
+            height: 100%;
+        }
     }
 
     &__link {
@@ -99,10 +147,42 @@
         margin-top: 20px;
         border-bottom: 1px solid $c-light-gray;
         padding-bottom: 10px;
+
+        @include mediaFrom(lg) {
+            margin: 0 20px;
+            padding: 0px;
+            border-bottom: none;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 0;
+                height: 1.5px;
+                background-color: #000;
+                bottom: -3px;
+                left: 0px;
+
+                transition-property: width;
+                transition-duration: 0.3s;
+                transition-timing-function: ease;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
     }
 
     &__link.active {
         color: $c-primary;
+
+        @include mediaFrom(lg) {
+            color: #000;
+            &::after {
+                width: 100%;
+            }
+        }
     }
 
     &__close-btn {
@@ -110,6 +190,8 @@
         background-color: transparent;
         position: absolute;
         right: 1.5rem;
+        color: #000;
+        cursor: pointer;
     }
 }
 
