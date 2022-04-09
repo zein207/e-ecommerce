@@ -153,6 +153,10 @@ header {
             padding: 0px;
             border-bottom: none;
             position: relative;
+            font-size: 11px;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            font-weight: 500;
 
             &::after {
                 position: absolute;

@@ -35,9 +35,9 @@ export const AppRouter = () => {
             </Switch>
         </div>
 
-        <div>
+        <footer>
             <Footer />
-        </div>
+        </footer>
     </Router>
   )
 }

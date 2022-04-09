@@ -1,4 +1,12 @@
 
+footer {
+    @include mediaFrom(lg) {
+        display: flex;
+        justify-content: center;
+        background-color: #e9e9e9;
+    }
+}
+
 .footer {
     &__main-container {
         background-color: #e9e9e9;
@@ -8,9 +16,30 @@
         align-items: center;
         padding: 1rem;
 
+        @include mediaFrom(lg) {
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            width: 90%;
+            padding: 5rem 0;
+        }
+
         .navbar__logo {
             font-size: 28px;
             color: #000;
+
+            @include mediaFrom(lg) {
+                font-size: 40px;
+            }
+        }
+    }
+
+    &__copy-container {
+        @include mediaFrom(lg) {
+            margin-top: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
     }
 
@@ -26,6 +55,17 @@
 
         padding-bottom: 8px;
         border-bottom: 1px solid $c-light-gray;
+
+        @include mediaFrom(lg) {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 0;
+            border-bottom: none;
+
+            > div {
+                margin-top: 0;
+            }
+        }
         h3 {
             display: flex;
             align-items: center;
@@ -34,11 +74,30 @@
 
         li {
             margin: 7px 0;
+            
+            @include mediaFrom(lg) {
+                margin: 9px 0;
+            }
         }
     }
 
     &__link {
         color: #a3a3a3;
+
+        transition-property: color, border-bottom;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+
+        @include mediaFrom(lg) {
+
+            padding-bottom: 3px;
+            font-size: 13px;
+
+            &:hover {
+                border-bottom: 1px solid #000;
+                color: #000;
+            }
+        }
     }
 }
 
@@ -53,6 +112,10 @@
         transition-property: transform;
         transition-duration: 0.4s;
         transition-timing-function: ease;
+
+        @include mediaFrom(lg) {
+            content: '';
+        }
     }
 
     &--active::after {
@@ -67,6 +130,10 @@
     transition-property: max-height;
     transition-duration: 0.4s;
     transition-timing-function: ease;
+
+    @include mediaFrom(lg) {
+        max-height: unset;
+    }
 
     &--active {
         max-height: 600px;

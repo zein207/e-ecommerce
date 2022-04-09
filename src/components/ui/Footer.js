@@ -53,7 +53,7 @@ export const Footer = () => {
 
       </div>
 
-      <div className='w-100 mt-5'>
+      <div className='w-100 mt-5 footer__copy-container'>
         <Logo />
 
         <div className='footer__copy mt-4'>
