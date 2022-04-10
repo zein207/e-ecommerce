@@ -2,9 +2,12 @@
 .category__main-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     
     @include mediaFrom(lg) {
         justify-content: space-between;
+        flex-direction: row;
     }
 
     &--reverse {
@@ -27,7 +30,7 @@
         width: 100%;
 
         @include mediaFrom(lg) {
-            width: 33%;
+            width: 30%;
         }
 
         .btn-cta {
@@ -38,6 +41,12 @@
 
     &__title {
         font-size: 2rem;
+
+        @include mediaFrom(lg) {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #000;
+        }
     }
 
     &__img {
@@ -52,4 +61,11 @@
         }
     }
 
+}
+
+.category__product-sliders {
+    width: 100%;
+    @include mediaFrom(lg) {
+        width: 60%;
+    }
 }

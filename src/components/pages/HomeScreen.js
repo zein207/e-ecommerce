@@ -1,4 +1,5 @@
 import React from 'react';
+import { ProductSlider } from '../product/ProductSlider';
 import { CategoryBanner } from '../ui/banner/CategoryBanner';
 import { DoubleBanner } from '../ui/banner/DoubleBanner';
 import { SingleBanner } from '../ui/banner/SingleBanner';
@@ -11,7 +12,8 @@ export const HomeScreen = () => {
 
       <MainSlider />
 
-      <div className='flex-center'>
+      <div className='flex-center mt-5'>
+
         <div className='category__main-container w-90'>
 
           <CategoryBanner
@@ -21,7 +23,14 @@ export const HomeScreen = () => {
             ctaLink='/category/category-name'
           />
 
+          <div className='category__product-sliders'>
+            <ProductSlider />
+            <ProductSlider />
+          </div>
+
         </div>
+
+
       </div>
 
       <SingleBanner
@@ -33,7 +42,7 @@ export const HomeScreen = () => {
         ctaLink='/category/category-name'
       />
 
-      <div className='flex-center'>
+      <div className='flex-center mt-5'>
         <div className='category__main-container category__main-container--reverse w-90'>
 
           <CategoryBanner
@@ -42,6 +51,11 @@ export const HomeScreen = () => {
             cta='Shop Now'
             ctaLink='/category/category-name'
           />
+
+          <div className='category__product-sliders'>
+            <ProductSlider />
+            <ProductSlider />
+          </div>
 
         </div>
       </div>
