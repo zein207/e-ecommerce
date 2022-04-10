@@ -41,7 +41,7 @@ export const MainSlider = () => {
             >
                 <SplideSlide>
                     <picture>
-                        <source media="(min-width: 1024px)" srcset="images/banner-d-05.jpg"></source>
+                        <source media="(min-width: 1024px)" srcSet="images/banner-d-05.jpg"></source>
                         <img src="images/banner-m-01.jpg" alt="A computer" className='slider__img'/>
                     </picture>
                     <div className='slider__text-container slider__text-container--left-center animate__animated'>
@@ -56,7 +56,7 @@ export const MainSlider = () => {
                 </SplideSlide>
                 <SplideSlide>
                     <picture>
-                        <source media="(min-width: 1024px)" srcset="images/banner-d-03.jpg"></source>
+                        <source media="(min-width: 1024px)" srcSet="images/banner-d-03.jpg"></source>
                         <img src="images/banner-m-02-a.jpg" alt="An iphone" className='slider__img'/>
                     </picture>
                     <div className='slider__text-container slider__text-container--center animate__animated'>
@@ -71,7 +71,7 @@ export const MainSlider = () => {
                 </SplideSlide>
                 <SplideSlide>
                     <picture>
-                        <source media="(min-width: 1024px)" srcset="images/banner-d-04.jpg"></source>
+                        <source media="(min-width: 1024px)" srcSet="images/banner-d-04.jpg"></source>
                         <img src="images/banner-m-04.jpg" alt="An iphone" className='slider__img'/>
                     </picture>
                     <div className='slider__text-container slider__text-container--right-center animate__animated'>

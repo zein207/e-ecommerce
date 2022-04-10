@@ -12,7 +12,7 @@ export const SingleBanner = ({ img, title, subtitle, cta, ctaLink, imgD }) => {
           </div>
 
           <picture>
-            <source media="(min-width: 1024px)" srcset={ imgD }></source>
+            <source media="(min-width: 1024px)" srcSet={ imgD }></source>
             <img className='single-b__img' src={ img } alt=''></img>
           </picture>
 
