@@ -9,6 +9,11 @@
         text-align: center;
         width: 100%;
         bottom: 60%;
+
+        @include mediaFrom(lg) {
+            bottom: 33%;
+            right: 20%;
+        }
     }
 
     &__title {
@@ -29,5 +34,9 @@
         width: 100%;
         max-height: 600px;
         object-fit: cover;
+
+        @include mediaFrom(lg) {
+            max-height: 350px;
+        }
     }
 }

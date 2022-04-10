@@ -9,7 +9,7 @@ export const MainSlider = () => {
     const sliderSettings = {
         rewind: true,
         gap: '1rem',
-        autoplay: true,
+        // autoplay: true,
         pauseOnHover: true,
         interval: 4000
     }
@@ -40,8 +40,11 @@ export const MainSlider = () => {
                 onInactive={ ( slide ) => { hideText( slide ) } }
             >
                 <SplideSlide>
-                    <img src="images/banner-m-01.jpg" alt="A computer" className='slider__img'/>
-                    <div className='slider__text-container animate__animated'>
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="images/banner-d-05.jpg"></source>
+                        <img src="images/banner-m-01.jpg" alt="A computer" className='slider__img'/>
+                    </picture>
+                    <div className='slider__text-container slider__text-container--left-center animate__animated'>
                         <p>#AprilStore</p>
                         <h1 className='mt-1'>
                             Simplify
@@ -52,8 +55,11 @@ export const MainSlider = () => {
                     </div>
                 </SplideSlide>
                 <SplideSlide>
-                    <img src="images/banner-m-02-a.jpg" alt="An iphone" className='slider__img'/>
-                    <div className='slider__text-container animate__animated'>
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="images/banner-d-03.jpg"></source>
+                        <img src="images/banner-m-02-a.jpg" alt="An iphone" className='slider__img'/>
+                    </picture>
+                    <div className='slider__text-container slider__text-container--center animate__animated'>
                         <p>#AprilStore</p>
                         <h1 className='mt-1'>
                             Need it now?
@@ -64,8 +70,11 @@ export const MainSlider = () => {
                     </div>
                 </SplideSlide>
                 <SplideSlide>
-                    <img src="images/banner-m-04.jpg" alt="An iphone" className='slider__img'/>
-                    <div className='slider__text-container animate__animated'>
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="images/banner-d-04.jpg"></source>
+                        <img src="images/banner-m-04.jpg" alt="An iphone" className='slider__img'/>
+                    </picture>
+                    <div className='slider__text-container slider__text-container--right-center animate__animated'>
                         <p>#AprilStore</p>
                         <h1 className='mt-1'>
                             Choose the perfect

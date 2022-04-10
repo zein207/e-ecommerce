@@ -11,34 +11,39 @@ export const HomeScreen = () => {
 
       <MainSlider />
 
-      <div className='category__main-container'>
+      <div className='flex-center'>
+        <div className='category__main-container w-90'>
 
-        <CategoryBanner
-          img='images/banner-01.jpg' 
-          title='#BestInTech'
-          cta='Shop Now'
-          ctaLink='/category/category-name'
-        />
+          <CategoryBanner
+            img='images/banner-01.jpg' 
+            title='#BestInTech'
+            cta='Shop Now'
+            ctaLink='/category/category-name'
+          />
 
+        </div>
       </div>
 
       <SingleBanner
-        img='images/banner-03.jpg' 
+        img='images/banner-03.jpg'
+        imgD='images/banner-d-01.jpg'
         title='#NewTech'
         subtitle='E-commerce Tech Site'
         cta='Shop Now'
         ctaLink='/category/category-name'
       />
 
-      <div className='category__main-container'>
+      <div className='flex-center'>
+        <div className='category__main-container category__main-container--reverse w-90'>
 
-        <CategoryBanner
-          img='images/banner-02.jpg' 
-          title='#Accessories'
-          cta='Shop Now'
-          ctaLink='/category/category-name'
-        />
+          <CategoryBanner
+            img='images/banner-02.jpg' 
+            title='#Accessories'
+            cta='Shop Now'
+            ctaLink='/category/category-name'
+          />
 
+        </div>
       </div>
 
       <DoubleBanner

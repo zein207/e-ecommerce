@@ -69,3 +69,34 @@
         }
     }
 }
+
+@include mediaFrom(lg) {
+
+    .slider__text-container {
+
+        p {
+            font-size: 15px;
+        }
+
+        h1 {
+            line-height: 70px;
+            font-size: 4.3rem;
+        }
+    
+        &--left-center {
+            top: 30%;
+            left: -20%;
+        }
+
+        &--center {
+            top: 30%;
+        }
+
+        &--right-center {
+            top: 20%;
+            right: -22%;
+        }
+    }
+
+}
+
