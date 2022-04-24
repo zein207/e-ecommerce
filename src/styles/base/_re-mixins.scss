@@ -55,3 +55,22 @@
         @error 'No value could be retrieved from "#{$breakpoint-max}". It is either not defined in the map, or it is an invalid number of px, em, or rem.';
     }
 }
+
+// Theme
+@mixin themify() {
+    @each $theme, $map in $themes {
+      .theme--#{$theme} & {
+        $theme-map: () !global;
+        @each $key, $submap in $map {
+          $value: map-get(map-get($themes, $theme), '#{$key}');
+          $theme-map: map-merge($theme-map, ($key: $value)) !global;
+        }
+        @content;
+        $theme-map: null !global;
+      }
+    }
+  }
+  
+  @function themed($key) {
+    @return map-get($theme-map, $key);
+  }

@@ -23,10 +23,10 @@ export const Footer = () => {
 
           <ul className=' mt-2 accordion-content'>
             <li>
-              <Link to='/blog' className='footer__link'>Blog</Link>
+              <Link to='/' className='footer__link'>Blog</Link>
             </li>
             <li>
-              <Link to='/contact' className='footer__link'>Contact Us</Link>
+              <Link to='/' className='footer__link'>Contact Us</Link>
             </li>
           </ul>
 
@@ -38,13 +38,13 @@ export const Footer = () => {
 
           <ul className=' mt-2 accordion-content'>
             <li>
-              <Link to='/category/category-name' className='footer__link'>Shop</Link>
+              <Link to='/' className='footer__link'>Shop</Link>
             </li>
             <li>
-              <Link to='/my-account' className='footer__link'>My Account</Link>
+              <Link to='/' className='footer__link'>My Account</Link>
             </li>
             <li>
-              <Link to='/wishlist' className='footer__link'>Wishlist</Link>
+              <Link to='/' className='footer__link'>Wishlist</Link>
             </li>
           </ul>
 

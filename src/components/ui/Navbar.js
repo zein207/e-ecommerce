@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+// import ThemeSetter from '../../helpers/ThemeSetter';
 import { toggleComponent } from '../../helpers/toggleComponent';
 import { Cart } from './Cart';
 import { Logo } from './Logo';
@@ -30,38 +31,38 @@ export const Navbar = () => {
                     <Search />
 
                     <NavLink 
-                        activeClassName="active"
+                        // activeClassName="active"
                         className="navbar__item navbar__link mt-4" 
                         exact
-                        to="/category/category-name"
+                        to="/"
                         onClick={ () => { toggleComponent( 'menu', 'left' ) } }
                     >
                         Shop
                     </NavLink>
 
                     <NavLink 
-                        activeClassName="active"
+                        // activeClassName="active"
                         className="navbar__item navbar__link" 
                         exact
-                        to="/contact"
+                        to="/"
                         onClick={ () => { toggleComponent( 'menu', 'left' ) } }
                     >
                         Contact Us
                     </NavLink>
 
                     <NavLink 
-                        activeClassName="active"
+                        // activeClassName="active"
                         className="navbar__item navbar__link" 
                         exact
-                        to="/blog"
+                        to="/"
                         onClick={ () => { toggleComponent( 'menu', 'left' ) } }
                     >
                         Blog
                     </NavLink>
                     <NavLink 
-                        activeClassName="active"
+                        // activeClassName="active"
                         exact
-                        to="/my-account"
+                        to="/"
                         className="navbar__ui-icon-container navbar__item navbar__link hidden-lg-up" 
                         onClick={ () => { toggleComponent( 'menu', 'left' ) } }
                     >
@@ -70,9 +71,9 @@ export const Navbar = () => {
                     </NavLink>
 
                     <NavLink 
-                        activeClassName="active"
+                        // activeClassName="active"
                         exact
-                        to="/wishlist"
+                        to="/"
                         className="navbar__ui-icon-container navbar__item navbar__link hidden-lg-up" 
                         onClick={ () => { toggleComponent( 'menu', 'left' ) } }
                     >
@@ -86,18 +87,18 @@ export const Navbar = () => {
             <div className='navbar__ui-items'>
 
                 <NavLink 
-                    activeClassName="active"
+                    // activeClassName="active"
                     exact
-                    to="/wishlist"
+                    to="/"
                     className="navbar__ui-icon-container" 
                 >
                     <i className="fa-solid fa-heart navbar__ui-icon"></i>
                 </NavLink>
 
                 <NavLink 
-                    activeClassName="active"
+                    // activeClassName="active"
                     exact
-                    to="/my-account"
+                    to="/"
                     className="navbar__ui-icon-container" 
                 >
                     <i className="fa-solid fa-user navbar__ui-icon"></i>
@@ -106,6 +107,8 @@ export const Navbar = () => {
                 <div className='navbar__ui-icon-container' onClick={ () => { toggleComponent( 'cart', 'right' ) } }>
                     <i className="fa-solid fa-cart-shopping navbar__ui-icon"></i>
                 </div>
+
+                {/* <ThemeSetter /> */}
 
             </div>
 
